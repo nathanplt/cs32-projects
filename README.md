@@ -4,16 +4,15 @@ This repository contains my solutions to the programming assignments and project
 
 ## Overview
 
-| Assignment     | Topics Covered                                                  | Key Files                                                     |
-|---------------:|-----------------------------------------------------------------|---------------------------------------------------------------|
-| **Homework 1** | Array-based Sequence ADT, TurnoutList ADT, unit testing         | `Sequence.h`, `Sequence.cpp`, `TurnoutList.h`, `testSequence.cpp` |
-| **Homework 2** | Stack & queue implementations, maze traversal, expression eval   | `mazequeue.cpp`, `mazestack.cpp`, `eval.cpp`                  |
-| **Homework 3** | Recursive landmark detection, linear list ops, maze exploration, binary trees | `landmark.cpp`, `linear.cpp`, `maze.cpp`, `tree.cpp`           |
-| **Homework 4** | Debugging list & vector ADTs, odd/even filters, sorting         | `list.cpp`, `badlist.cpp`, `oddvector.cpp`, `sorts.cpp`       |
-| **Project 1**  | OOP design & simulation (Bee game)                              | `Game.cpp`, `Bee.cpp`, `History.cpp`, `main.cpp`              |
-| **Project 2**  | Sequence ADT extension & test harness                           | `Sequence.cpp`, `testSequence.cpp`, `report.txt`              |
-| **Project 5**  | File I/O, flight-map parser, graph search (A* with caching)     | `fm.cpp`, `bstset.h`, `tp.cpp`                                |
-
+| Assignment        | Topics Covered                                           | Key Files                                   |
+|------------------:|-----------------------------------------------------------|---------------------------------------------|
+| **Homework&nbsp;1** | Sequence ADT (array-based), TurnoutList ADT, unit tests   | `Sequence.{h,cpp}`, `TurnoutList.h`, `testSequence.cpp` |
+| **Homework&nbsp;2** | Stacks/queues, maze traversal, expression eval            | `mazequeue.cpp`, `mazestack.cpp`, `eval.cpp` |
+| **Homework&nbsp;3** | Recursion, linear ops, maze exploration, binary trees     | `landmark.cpp`, `maze.cpp`, `tree.cpp`       |
+| **Homework&nbsp;4** | Debugging list/vector ADTs, odd/even filters, sorting     | `list.cpp`, `oddvector.cpp`, `sorts.cpp`     |
+| **Project&nbsp;1**  | OOP design & simulation (Bee game)                        | `Game.cpp`, `Bee.cpp`, `main.cpp`            |
+| **Project&nbsp;2**  | Sequence ADT extension & test harness                      | `Sequence.cpp`, `testSequence.cpp`           |
+| **Project&nbsp;5**  | Flight-map parser, graph search (A* w/ caching), file I/O  | `fm.cpp`, `tp.cpp`, `bstset.h`               |
 ## Building & Running
 
 All code targets **C++11** and was tested on macOS (clang++) and Linux (g++). From any assignment or project folder:
