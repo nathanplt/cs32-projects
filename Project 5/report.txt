@@ -1,0 +1,6 @@
+1) FlightManager::load_flight_data()
+If N is the total number of lines of flight data, and an aiport has on average F flights, then the time complexity is
+O(N * logF).
+
+2) FlightManager::find_flights()
+If an airport has on average F flights, then the time complexity is O(F * logF).

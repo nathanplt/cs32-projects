@@ -1,0 +1,13 @@
+1e. For vectors, when push_back is called, it is possible that the entire underlying array (that holds values) is reallocated. So, after a push_back, the entire array of values could be located in a completely different place in memory, which invalidates any existing iterators that point to previous memory locations (leading to undefined behavior). In test case 3, the iterator becomes invalid once push_back is called, leading to failure.
+
+3. The one-argument form of Sequence<Coord>::insert has a comparison in it which using the > operator to compare two Coords (value > p->value). However, Coord does not have the > operator defined, causing a compile error.
+
+4b. If there was no parameter for the current path and no static variables allowed, each call to the recursive function would have no idea what path it is currently on. For example, if the parent class is Actor, and the child class is Goodie, when we get to Goodie, we should be printing "Actor=>Goodie", but the recursive call to Goodie would have no idea that its parent was Actor (nor would it have any idea what the parent of its parent is, etc). So, it would only be able to print its own name without the path attached, which does not solve the problem correctly.
+
+5a. This algorithm has a time complexity of O(N^3) because there are three nested for loops that iterate N times each.
+
+5b. Although the algorithm skips some operations, the time complexity still has a cubed order and results in O(N^3). The two outer loops (i and j) iterate a number of times equal to the sum of all integers from 0 to N - 1, which is the same as (N^2 - N) / 2. The final inner loop iterates N times. So, in the end, the number of iterations is approximately (N^3 - N^2) / 2, giving a time complexity of O(N^3).
+
+6a. Both the get(pos, v) method and the insert(pos, v) method are implemented in such a way that their own Big-O time complexity is O(N), as both methods iterate through around pos nodes (throgh the nodAtPos method). Both of these methods are called around N times in the loops, leading to a time complexity of N * N or O(N^2).
+
+6b. In this implementations, we iterate through each list only once instead of repeatedly calling insert and get which traverse the list everytime. More specifically, we use p1 to traverse through seq1 and p2 to traverse through seq2 as well as res to insert nodes into the final list. Hence, each list is processed exactly once, leading to an O(N) time complexity, making this solution better than the first.

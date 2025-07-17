@@ -1,0 +1,29 @@
+2) First 12 coordinates popped off the stack:
+(6,4)
+(6,3)
+(6,5)
+(7,5)
+(8,5)
+(8,6)
+(8,7)
+(8,8)
+(7,8)
+(6,6)
+(5,4)
+(4,4)
+
+4) First 12 coordinates popped off the queue:
+(6,4)
+(5,4)
+(6,5)
+(6,3)
+(4,4)
+(6,6)
+(7,5)
+(3,4)
+(4,5)
+(8,5)
+(2,4)
+(4,6)
+
+The two algorithms use differnet methods of traversal. The first algorithm, that uses a stack, resembles a path-finding algorithm that goes depth-first. In other words, for each possible path, it will travel down that path as far as possible before trying a different path. The second algorithm, that uses a queue, resembles a path-finding algorithm that goes breadth-first. This means instead of going all the way down each path before trying another, it will expand the breadth of its paths one-by-one.  So, if there are 3 different paths, it will move down the first by one step, then the second by one step, then the third by one step. 
