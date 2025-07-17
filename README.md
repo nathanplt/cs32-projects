@@ -13,7 +13,8 @@ This repository contains my solutions to the programming assignments and project
 | **Project&nbsp;1**  | OOP design & simulation (Bee game)                        | `Game.cpp`, `Bee.cpp`, `main.cpp`            |
 | **Project&nbsp;2**  | Sequence ADT extension & test harness                      | `Sequence.cpp`, `testSequence.cpp`           |
 | **Project&nbsp;5**  | Flight-map parser, graph search (A* w/ caching), file I/O  | `fm.cpp`, `tp.cpp`, `bstset.h`               |
-## Building & Running
+
+## How to build and run
 
 All code targets **C++11** and was tested on macOS (clang++) and Linux (g++). From any assignment or project folder:
 
